@@ -59,17 +59,22 @@ html, body {
     margin-top: 0;
 }
 
-.project p {
-    max-width: 100%; /* Adjust or remove as needed */
+.project-content {
+    display: flex;
+    align-items: flex-start;
 }
 
-.project img {
+.project-content p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project-content img {
     width: 200px;
     height: auto;
-    margin-top: 20px; /* Spacing between text and image */
 }
 
-/* Responsive Media Query */
+/* Responsive Design */
 @media (max-width: 800px) {
     .container {
         flex-direction: column;
@@ -78,8 +83,17 @@ html, body {
         width: 100%;
         min-height: auto;
     }
-    .project img {
+}
+
+@media (max-width: 600px) {
+    .project-content {
+        flex-direction: column;
+    }
+    .project-content p {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .project-content img {
         width: 100%;
-        margin-top: 10px;
     }
 }
