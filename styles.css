@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* Left Column Styling */
+.left-column {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile-picture img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-section h2, .about-section h3 {
+    margin-top: 0;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+}
+
+/* Right Column Styling */
+.right-column {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.project img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project p {
+    max-width: 60%;
+}
