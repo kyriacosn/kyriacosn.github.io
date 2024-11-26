@@ -1,13 +1,16 @@
-body {
+/* Ensure html and body take up full height */
+html, body {
+    height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
+/* Container settings */
 .container {
     display: flex;
+    min-height: 100%;
 }
 
-/* Left Column Styling */
+/* Left Column */
 .left-column {
     width: 30%;
     background-color: #f4f4f4;
@@ -15,60 +18,19 @@ body {
     box-sizing: border-box;
 }
 
-.profile-picture img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.about-section h2, .about-section h3 {
-    margin-top: 0;
-}
-
-.about-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.about-section li {
-    margin-bottom: 10px;
-}
-
-/* Right Column Styling */
+/* Right Column */
 .right-column {
     width: 70%;
     padding: 20px;
     box-sizing: border-box;
+    background-color: #ffffff; /* Change to your desired color */
 }
 
-.project {
-    display: flex;
-    margin-bottom: 40px;
+/* Make both columns stretch to full height */
+.left-column, .right-column {
+    min-height: 100vh;
 }
 
-.project img {
-    width: 200px;
-    height: auto;
-    margin-left: 20px;
-}
-
-.project h2 {
-    margin-top: 0;
-}
-
-.project p {
-    max-width: 60%;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .left-column, .right-column {
-        width: 100%;
-    }
-    .project {
-        flex-direction: column;
-    }
     .project img {
         margin-left: 0;
         margin-top: 20px;
