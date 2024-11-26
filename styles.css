@@ -1,10 +1,11 @@
-/* Ensure html and body take up full height */
+/* Reset and base styles */
 html, body {
     height: 100%;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Container settings */
+/* Container */
 .container {
     display: flex;
     min-height: 100%;
@@ -18,6 +19,24 @@ html, body {
     box-sizing: border-box;
 }
 
+.profile-picture img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-section h2, .about-section h3 {
+    margin-top: 0;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+}
+
 /* Right Column */
 .right-column {
     width: 70%;
@@ -26,13 +45,41 @@ html, body {
     background-color: #ffffff; /* Change to your desired color */
 }
 
-/* Make both columns stretch to full height */
+/* Ensure columns stretch full height */
 .left-column, .right-column {
     min-height: 100vh;
 }
 
+/* Project Styling */
+.project {
+    margin-bottom: 40px;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project p {
+    max-width: 100%; /* Adjust or remove as needed */
+}
+
+.project img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px; /* Spacing between text and image */
+}
+
+/* Responsive Media Query */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+        min-height: auto;
+    }
     .project img {
-        margin-left: 0;
-        margin-top: 20px;
+        width: 100%;
+        margin-top: 10px;
     }
 }
