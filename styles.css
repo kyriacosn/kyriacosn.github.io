@@ -16,7 +16,7 @@ html, body {
 /* Left Column */
 .left-column {
     width: 30%;
-    background-color: #f4f4f4;
+ /*   background-color: #f4f4f4;*/
     padding: 20px;
     box-sizing: border-box;
 }
@@ -44,7 +44,7 @@ html, body {
     width: 70%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #ffffff; /* Change to your desired color */
+  /*  background-color: #ffffff; */ /* Change to your desired color */
 }
 
 /* Ensure columns stretch full height */
